@@ -9,7 +9,7 @@ public class Game : MonoBehaviour
 
     private void Awake()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 1;
     }
 
     public void Update()

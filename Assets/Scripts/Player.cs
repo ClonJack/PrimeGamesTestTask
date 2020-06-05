@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-
+        if(Input.GetAxisRaw("Horizontal")!=0)
         Target = dataPlayer.Target(Input.GetAxisRaw("Horizontal"));
 
         MoveForward();
