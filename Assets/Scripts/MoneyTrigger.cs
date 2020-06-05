@@ -11,7 +11,7 @@ public class MoneyTrigger : MonoBehaviour
            
             pl.SetMoney();
             PlayerPrefs.SetInt("Money", pl.dataPlayer.Money);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
 
         }
     }

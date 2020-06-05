@@ -9,8 +9,9 @@ public class DieTrigger : MonoBehaviour
         if(other.TryGetComponent(out Player pl))
         {
             PlayerPrefs.SetInt("Money", pl.dataPlayer.Money);
-            Time.timeScale = 0;
             pl.dataPlayer.UIOver.SetActive(true);
+            pl.enabled = false;
+        
        
         }
     }
