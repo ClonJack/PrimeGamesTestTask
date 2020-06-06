@@ -18,12 +18,9 @@ public class Platform : MonoBehaviour
             else if (transform.GetChild(i).tag == "Money") Money.Add(transform.GetChild(i).transform);
         }
     }
-
     private void Awake() => setting = GameObject.Find("Manager").GetComponent<SettingSpawn>();        
-    
     private void Start()
     {
-
         SetObstacle();
         setting.FixSpawn(this);
         if (isSpawn)

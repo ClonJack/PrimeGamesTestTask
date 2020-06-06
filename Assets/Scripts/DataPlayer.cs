@@ -12,17 +12,12 @@ public enum MoveLines
 };
 
 [Serializable]
-public class DataPlayer
+public class DataPlayer:UI
 {
-    public int Money;
-    public TextMeshProUGUI MoneyText;
     public Animator Animator;
     public Transform RightLines, LeftLines, CenterLines;
     public MoveLines lines;
-    public TextMeshProUGUI UnitText;
     public AnimationClip AnimationEffect;
-    public GameObject UIOver;
-
     public IEnumerator IPlayEffectText()
     {
         WaitForSeconds waitFor = new WaitForSeconds(AnimationEffect.length);
@@ -43,4 +38,14 @@ public class DataPlayer
         return tr;
 
     }
+}
+
+
+
+public class UI
+{
+    public int Money;
+    public TextMeshProUGUI MoneyText;
+    public GameObject UIOver;
+    public TextMeshProUGUI UnitText;
 }

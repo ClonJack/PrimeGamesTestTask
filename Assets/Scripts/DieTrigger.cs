@@ -6,7 +6,7 @@ public class DieTrigger : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent(out Player pl))
+        if (other.TryGetComponent(out Player pl))
         {
             PlayerPrefs.SetInt("Money", pl.dataPlayer.Money);
             pl.dataPlayer.UIOver.SetActive(true);

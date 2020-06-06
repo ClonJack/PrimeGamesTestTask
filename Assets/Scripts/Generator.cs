@@ -6,7 +6,6 @@ public class Generator : MonoBehaviour
 {
     public static Generator Gen;
     private void Awake() => Gen = this;
-
     private IEnumerator IMove(Transform objMove, Vector3 targetPos)
     {
         WaitForEndOfFrame waitForEnd = new WaitForEndOfFrame();
@@ -17,7 +16,6 @@ public class Generator : MonoBehaviour
             yield return waitForEnd;
         }
     }
-
     public void GenerateOffset(List<Transform> obj)
     {
         foreach (var ob in obj)
@@ -30,9 +28,5 @@ public class Generator : MonoBehaviour
 
             StartCoroutine(IMove(ob, offset));
         }
-
-
     }
-
-
 }

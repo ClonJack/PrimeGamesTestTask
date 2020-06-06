@@ -9,14 +9,12 @@ public class SettingSpawn : MonoBehaviour
     [SerializeField] private int moneyCountSpawn;
     [Range(1, 9)]
     [SerializeField] private int obstacleCountSpawn;
-
-
+ 
     public void FixSpawn(Platform platform)
     {
         
         var needDeleteMoney = platform.Money.Count - moneyCountSpawn;
         var needDeleteObstacle = platform.Obstacles.Count - obstacleCountSpawn;
-
 
         for(int i = 0; i < needDeleteObstacle; i++)
         {

@@ -3179,14 +3179,14 @@ MonoBehaviour:
   dataPlayer:
     Money: 0
     MoneyText: {fileID: 1062242696}
+    UIOver: {fileID: 958251310}
+    UnitText: {fileID: 613082101}
     Animator: {fileID: 1303672283}
     RightLines: {fileID: 879699534}
     LeftLines: {fileID: 1254942577}
     CenterLines: {fileID: 1173847223}
     lines: 2
-    UnitText: {fileID: 613082101}
     AnimationEffect: {fileID: 7400000, guid: 27ca1f731dabffb499590f173d9b0b2b, type: 2}
-    UIOver: {fileID: 958251310}
   Target: {fileID: 0}
   moveObj: {fileID: 346590488}
   speed: 5
@@ -3448,10 +3448,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7172742976259710700, guid: d8f0157fe353d324cbdfd3c908bdbba9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6392196391943891692, guid: d8f0157fe353d324cbdfd3c908bdbba9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 475382233217884126, guid: d8f0157fe353d324cbdfd3c908bdbba9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797301485801925058, guid: d8f0157fe353d324cbdfd3c908bdbba9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3793851297821250399, guid: d8f0157fe353d324cbdfd3c908bdbba9,
         type: 3}
       propertyPath: m_Name
       value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 3901220822986941311, guid: d8f0157fe353d324cbdfd3c908bdbba9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4162343878150696063, guid: d8f0157fe353d324cbdfd3c908bdbba9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5057772735337289477, guid: d8f0157fe353d324cbdfd3c908bdbba9,
         type: 3}
@@ -3517,6 +3547,16 @@ PrefabInstance:
         type: 3}
       propertyPath: isSpawn
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7311596537089550965, guid: d8f0157fe353d324cbdfd3c908bdbba9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9068517778576745741, guid: d8f0157fe353d324cbdfd3c908bdbba9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8f0157fe353d324cbdfd3c908bdbba9, type: 3}
