@@ -3372,12 +3372,12 @@ PrefabInstance:
     - target: {fileID: 1209116554274950480, guid: f73267fc806e95d4ea81b981a164d3e8,
         type: 3}
       propertyPath: moneyCountSpawn
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1209116554274950480, guid: f73267fc806e95d4ea81b981a164d3e8,
         type: 3}
       propertyPath: obstacleCountSpawn
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1209116554274950486, guid: f73267fc806e95d4ea81b981a164d3e8,
         type: 3}

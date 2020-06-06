@@ -9,29 +9,25 @@ public class SettingSpawn : MonoBehaviour
     [SerializeField] private int moneyCountSpawn;
     [Range(1, 9)]
     [SerializeField] private int obstacleCountSpawn;
- 
+
     public void FixSpawn(Platform platform)
     {
-        
         var needDeleteMoney = platform.Money.Count - moneyCountSpawn;
         var needDeleteObstacle = platform.Obstacles.Count - obstacleCountSpawn;
 
-        for(int i = 0; i < needDeleteObstacle; i++)
+        for (int i = 0; i < needDeleteObstacle; i++)
         {
             var del = platform.Obstacles[Random.Range(0, platform.Obstacles.Count)];
-            Destroy(del.gameObject);
             platform.Obstacles.Remove(del);
-
+            del.gameObject.SetActive(false);
         }
 
         for (int i = 0; i < needDeleteMoney; i++)
         {
             var del = platform.Money[Random.Range(0, platform.Money.Count)];
-            Destroy(del.gameObject);
             platform.Money.Remove(del);
-
+            del.gameObject.SetActive(false);
         }
-   
-    }
 
+    }
 }
