@@ -6,17 +6,10 @@ public class Game : MonoBehaviour
 {
     [SerializeField] private Player player;
     [SerializeField] private GameObject strartText;
-
-    private void Awake()
-    {
-        Time.timeScale = 1;
-    }
-
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Time.timeScale = 1;
             player.enabled = true;
      
             player.dataPlayer.Money = PlayerPrefs.GetInt("Money", 0);

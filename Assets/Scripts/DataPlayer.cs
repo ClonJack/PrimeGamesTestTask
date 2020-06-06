@@ -30,10 +30,6 @@ public class DataPlayer
 
         Animator.SetBool("IsPlayEffect", false);
     }
-
-
-
-
     public Transform Target(float dirX)
     {
         Transform tr = null;

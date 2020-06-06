@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
         MoveForward();
         MoveInput();
 
-        dataPlayer.UnitText.text = (Vector3.Distance(transform.position, startPos)).ToString("#.#");
+        dataPlayer.UnitText.text = (Vector3.Distance(transform.position, startPos)).ToString("#");
 
     }
 }

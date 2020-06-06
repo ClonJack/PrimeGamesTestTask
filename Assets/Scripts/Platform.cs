@@ -21,13 +21,12 @@ public class Platform : MonoBehaviour
 
     private void Awake() => setting = GameObject.Find("Manager").GetComponent<SettingSpawn>();        
     
-
     private void Start()
     {
 
         SetObstacle();
         setting.FixSpawn(this);
         if (isSpawn)
-            Generator.GenerateOffset(obj);
+            Generator.Gen.GenerateOffset(obj);
     }
 }

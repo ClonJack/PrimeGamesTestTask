@@ -11,8 +11,6 @@ public class DieTrigger : MonoBehaviour
             PlayerPrefs.SetInt("Money", pl.dataPlayer.Money);
             pl.dataPlayer.UIOver.SetActive(true);
             pl.enabled = false;
-        
-       
         }
     }
 }
